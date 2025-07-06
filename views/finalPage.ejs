@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - FeedbackBoard</title>
+    <link rel="stylesheet" href="/CSS/final.css">
+</head>
+<body>
+    <!-- Confetti elements -->
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+
+    <div class="container">
+        <div class="timer" id="timer">
+            Redirecting in <span id="countdown">10</span>s
+        </div>
+
+        <div class="success-icon">
+            <div class="checkmark"></div>
+        </div>
+
+        <h1>Thank You!</h1>
+        <p class="subtitle">Feedback Successfully Submitted</p>
+        
+        <div class="message">
+            Your valuable feedback has been received and will help us improve <span class="highlight">FeedbackBoard</span>. We truly appreciate you taking the time to share your thoughts and suggestions with us.
+        </div>
+
+        <div class="actions">
+            <!-- <a href="/" class="btn btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                    <polyline points="9,22 9,12 15,12 15,22"/>
+                </svg>
+                Back to Home
+            </a> -->
+            <button onclick="submitAnother()" class="btn btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v20M2 12h20"/>
+                </svg>
+                Submit Another
+            </button>
+        </div>
+
+        <div class="stats">
+            <p style="color: #6b7280; font-size: 14px; margin-bottom: 16px;">Join our community of contributors</p>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">1,247</span>
+                    <span class="stat-label">Total Feedback</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">856</span>
+                    <span class="stat-label">Happy Users</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">94%</span>
+                    <span class="stat-label">Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Script/final.js"></script>
+</body>
+</html>

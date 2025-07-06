@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback for FeedbackBoard</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">FB</div>
+            <h1>Submit Your Feedback</h1>
+            <p class="subtitle">
+                Share your thoughts on <span class="highlight">FeedbackBoard</span> - a full-stack feedback collection platform. Your insights help us improve!
+            </p>
+        </div>
+
+        <form action="/submit" method="POST" id="feedbackForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Feedback</label>
+                <textarea id="message" name="message" placeholder="Share your thoughts on the design, functionality, user experience, or any suggestions for improvement..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">
+                Send Feedback
+            </button>
+        </form>
+
+        <div class="tech-stack">
+            <p>Built with modern technologies:</p>
+            <div class="tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">EJS</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MySQL</span>
+            </div>
+        </div>
+    </div>
+    <script src="/Script/script.js"></script>
+</body>
+</html>
